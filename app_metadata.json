@@ -1,0 +1,243 @@
+{
+  "appgroup_id": "69c6387c6b7e359634b95efc",
+  "appgroup_name": "PromptVault",
+  "apps": {
+    "haupt_prompt": {
+      "app_id": "69c6386b31076725d66a18c5",
+      "name": "Haupt-Prompt",
+      "controls": {
+        "prompt_id": {
+          "identifier": "prompt_id",
+          "label": "ID",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "name": {
+          "identifier": "name",
+          "label": "Name",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "zweck_kontext": {
+          "identifier": "zweck_kontext",
+          "label": "Zweck / Kontext",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "prompt_text": {
+          "identifier": "prompt_text",
+          "label": "Prompt-Text",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "status": {
+          "identifier": "status",
+          "label": "Status",
+          "type": "lookup",
+          "subtype": "radio",
+          "fulltype": "lookup/radio",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as radio button fields in HTML pages.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false,
+          "lookup_data": {
+            "aktiv": "Aktiv",
+            "archiviert": "Archiviert",
+            "entwurf": "Entwurf"
+          }
+        },
+        "erstellt_am": {
+          "identifier": "erstellt_am",
+          "label": "Erstellt am",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "zuletzt_geaendert": {
+          "identifier": "zuletzt_geaendert",
+          "label": "Zuletzt geändert",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "vollstaendiger_prompt": {
+          "identifier": "vollstaendiger_prompt",
+          "label": "Vollständiger Prompt (zusammengeführt)",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "prompt_email_action": {
+          "identifier": "prompt_email_action",
+          "label": "Prompt per E-Mail versenden",
+          "type": "lookup",
+          "subtype": "radio",
+          "fulltype": "lookup/radio",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as radio button fields in HTML pages.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true,
+          "lookup_data": {
+            "send_email": "E-Mail mit vollständigem Prompt versenden"
+          }
+        }
+      }
+    },
+    "nachbesserung": {
+      "app_id": "69c6386f252dfa516befa887",
+      "name": "Nachbesserung",
+      "controls": {
+        "haupt_prompt_link": {
+          "identifier": "haupt_prompt_link",
+          "label": "Verknüpfter Haupt-Prompt",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to a LivingApp record from the target lookup app 'Haupt-Prompt' with the id `69c6386b31076725d66a18c5` (or `null`/`None`).\n\nThe field value will be a valid record URL in the form `https://my.living-apps.de/rest/apps/69c6386b31076725d66a18c5/<record-id>` (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false,
+          "lookup_app": "https://my.living-apps.de/rest/apps/69c6386b31076725d66a18c5"
+        },
+        "versionsnummer": {
+          "identifier": "versionsnummer",
+          "label": "Versionsnummer",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "nachbesserungs_text": {
+          "identifier": "nachbesserungs_text",
+          "label": "Nachbesserungs-Text",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "aenderungsnotiz": {
+          "identifier": "aenderungsnotiz",
+          "label": "Änderungsnotiz",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        },
+        "erstellt_am_nb": {
+          "identifier": "erstellt_am_nb",
+          "label": "Erstellt am",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": false
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Haupt-Prompt",
+      "Nachbesserung"
+    ]
+  }
+}

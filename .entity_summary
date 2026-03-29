@@ -1,0 +1,3 @@
+- Haupt-Prompt (haupt_prompt): prompt_id[string/text], name[string/text], zweck_kontext[string/textarea], prompt_text[string/textarea], status[lookup/radio], erstellt_am[date/date], zuletzt_geaendert[date/date], vollstaendiger_prompt[string/textarea], prompt_email_action[lookup/radio]
+- Nachbesserung (nachbesserung): haupt_prompt_link[applookup/select], versionsnummer[string/text], nachbesserungs_text[string/textarea], aenderungsnotiz[string/textarea], erstellt_am_nb[date/date]
+  → haupt_prompt_link links to app_id 69c6386b31076725d66a18c5
